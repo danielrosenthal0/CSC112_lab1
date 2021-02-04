@@ -27,23 +27,25 @@ public class Lab1 {
             System.out.println(store_item.get(i));
         }
         boolean exit = false;
-        while (exit = false) {
+        int item = 0;
+        String yes;
+        do {
             System.out.println("Select number of item to add to cart:");
             Scanner scnr = new Scanner(System.in);
-            int item = 0;
+
             try {
                 item = scnr.nextInt() - 1;
                 System.out.println(store_item.get(item));
-                subtotal = subtotal + store_price.get(item);
-                System.out.println(subtotal);
-                System.out.println("Do you want to continue shopping? Enter yes or no.");
-                if (scnr.nextLine() == "No"); {
-                    exit = true;
-                }
-
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Exception thrown: " + e);
             }
-        }
+            subtotal = subtotal + store_price.get(item);
+            System.out.println("Subtotal: $" + subtotal);
+            System.out.println("Do you want to continue shopping? Enter yes or no.");
+            yes = scnr.nextLine();
+            if (scnr.nextLine() == "yes"); {
+                exit = false;
+            }
+        } while (!exit);
     }
 }

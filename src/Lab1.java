@@ -10,6 +10,7 @@ public class Lab1 {
         store_item.add("Water, $1");
         store_item.add("Apple Watch, $300");
         store_item.add("Toothpaste, $0.50");
+        store_item.add("Chips, $3.50");
 
 
         ArrayList<Double> store_price = new ArrayList<Double>();
@@ -18,9 +19,10 @@ public class Lab1 {
         store_price.add(1.0);
         store_price.add(300.0);
         store_price.add(0.5);
+        store_price.add(3.5);
 
 
-        double subtotal = 0;
+        double subtotal = 0, sales_tax = 0, total = 0;
         System.out.println("Store inventory and prices:");
         for (int i = 0; i < store_item.size(); i++){
             System.out.print(i + 1 + " ");
@@ -29,7 +31,8 @@ public class Lab1 {
         boolean exit = false;
         int item = 0;
         String yes;
-        do {
+
+        while (!exit) {
             System.out.println("Select number of item to add to cart:");
             Scanner scnr = new Scanner(System.in);
 
@@ -40,12 +43,18 @@ public class Lab1 {
                 System.out.println("Exception thrown: " + e);
             }
             subtotal = subtotal + store_price.get(item);
+            sales_tax = subtotal*0.05;
+            total = subtotal*sales_tax;
             System.out.println("Subtotal: $" + subtotal);
+            System.out.println("Sales tax: $" + sales_tax);
+            System.out.println("Total: $" + total);
             System.out.println("Do you want to continue shopping? Enter yes or no.");
             yes = scnr.nextLine();
-            if (scnr.nextLine() == "yes"); {
+            if (scnr.nextLine() == "yes") {
                 exit = false;
+            } else {
+                exit = true;
             }
-        } while (!exit);
+        }
     }
 }

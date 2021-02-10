@@ -9,30 +9,32 @@ public class Lab1_1 {
         ArrayList<String> store_item = new ArrayList<String>();
 
         //adding name
-        store_item.add("Beans, $2");
-        store_item.add("Pineapple, $3");
-        store_item.add("Water, $1");
-        store_item.add("Apple Watch, $300");
-        store_item.add("Toothpaste, $0.50");
-        store_item.add("Chips, $3.50");
+        store_item.add("Beans");
+        store_item.add("Pineapple");
+        store_item.add("Water");
+        store_item.add("Apple Watch");
+        store_item.add("Toothpaste");
+        store_item.add("Chips");
 
         //creating array list for names
         ArrayList<Double> store_price = new ArrayList<Double>();
 
         //adding prices
-        store_price.add(2.0);
-        store_price.add(3.0);
-        store_price.add(1.0);
-        store_price.add(300.0);
-        store_price.add(0.5);
-        store_price.add(3.5);
+        store_price.add(2.50);
+        store_price.add(3.99);
+        store_price.add(1.99);
+        store_price.add(299.99);
+        store_price.add(0.50);
+        store_price.add(3.50);
 
         //command line input
         for (int i = 0; i < args.length; i++) {
             try {
-                int n = Integer.parseInt(args[i]);
-
-                System.out.println
+                int n = Integer.parseInt(args[i]) - 1;
+                System.out.printf(store_item.get(n) + ", $" + store_price.get(n) + "%n");
+            } catch (ArrayIndexOutOfBoundsException e) {
+                    System.out.println("Exception thrown: " + e);
+                    System.exit(1);
             }
         }
     }

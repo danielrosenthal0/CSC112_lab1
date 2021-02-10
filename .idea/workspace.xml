@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit5">
-      <change afterPath="$PROJECT_DIR$/src/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab1_1.java" afterDir="false" />
+    <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab1_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +53,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Lab1_1">
     <configuration name="Lab1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab1" />
       <module name="Lab1-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab1_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab1_1" />
+      <module name="Lab1-1" />
+      <option name="PROGRAM_PARAMETERS" value="2 5 6 6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,8 +80,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Lab1" />
+      <item itemvalue="Application.Lab1_1" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lab1_1" />
         <item itemvalue="Application.Lab1" />
       </list>
     </recent_temporary>
@@ -90,7 +101,7 @@
       <updated>1612453397482</updated>
       <workItem from="1612453398833" duration="13029000" />
       <workItem from="1612819802472" duration="886000" />
-      <workItem from="1612890205396" duration="5413000" />
+      <workItem from="1612890205396" duration="7061000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1612459718682</created>
@@ -127,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612818669646</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit 6">
+      <created>1612932263484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612932263485</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +169,7 @@
     <MESSAGE value="commit3" />
     <MESSAGE value="commit4" />
     <MESSAGE value="commit5" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit5" />
+    <MESSAGE value="commit 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 6" />
   </component>
 </project>

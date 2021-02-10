@@ -49,6 +49,7 @@ public class Lab1 {
                 System.out.println(store_item.get(item));
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Exception thrown: " + e);
+                System.exit(1);
             }
             subtotal = subtotal + store_price.get(item);
             sales_tax = subtotal*0.05;

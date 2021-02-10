@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit4">
+    <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit5">
+      <change afterPath="$PROJECT_DIR$/src/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab1_1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1.java" afterDir="false" />
     </list>
@@ -46,6 +48,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -85,7 +88,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612453397482</updated>
-      <workItem from="1612453398833" duration="12995000" />
+      <workItem from="1612453398833" duration="13029000" />
+      <workItem from="1612819802472" duration="886000" />
+      <workItem from="1612890205396" duration="5413000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1612459718682</created>
@@ -115,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612739365710</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit5">
+      <created>1612818669645</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612818669646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,12 +143,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit1" />
     <MESSAGE value="commit2" />
     <MESSAGE value="commit3" />
     <MESSAGE value="commit4" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit4" />
+    <MESSAGE value="commit5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit5" />
   </component>
 </project>

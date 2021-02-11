@@ -1,69 +1,80 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Lab1 {
     public static void main(String[] args) {
-
-        //private class store {
-            //Names of items in store
-            ArrayList<String> store_item = new ArrayList<String>();
-        store_item.add("Beans, $2");
-        store_item.add("Pineapple, $3");
-        store_item.add("Water, $1");
-        store_item.add("Apple Watch, $300");
-        store_item.add("Toothpaste, $0.50");
-        store_item.add("Chips, $3.50");
-
-            //Prices of items
-            ArrayList<Double> store_price = new ArrayList<Double>();
-        store_price.add(2.0);
-        store_price.add(3.0);
-        store_price.add(1.0);
-        store_price.add(300.0);
-        store_price.add(0.5);
-        store_price.add(3.5);
-        //}
         //Initializing variables
-        double subtotal = 0, sales_tax = 0, total = 0;
+        double subtotal = 0.00;
+        double sales_tax;
+        double total;
 
-        //Presenting list of items in store w/ prices
-        System.out.println("Store inventory and prices:");
-        for (int i = 0; i < store_item.size(); i++){
-            System.out.print(i + 1 + " ");
-            System.out.println(store_item.get(i));
-        }
+        //welcome note
+        System.out.println("Welcome to Daniel's Corner Store.");
+        System.out.println();
+        System.out.println("           Receipt");
+        String item_name = "Item";
+        String item_prices = "Price";
+        System.out.printf( "%-15s %13s %n", item_name, item_prices);
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-        //Initializing more variables
-        boolean exit = false;
-        int item = 0;
-        String yes;
+        //creating array list for names
+        ArrayList<Items> store = new ArrayList<>();
 
-        //While loop to continuously ask for inout from command line
-        //while (!exit) {
-            System.out.println("Select number of item to add to cart:");
-            Scanner scnr = new Scanner(System.in);
+        Items beans = new Items("Beans      ", 2.50);
+        Items pineapple = new Items("Pineapple  ", 3.99);
+        Items water = new Items("Water      ", 1.99);
+        Items apple_watch = new Items("Apple Watch", 299.99);
+        Items toothpaste = new Items("Toothpaste ", 0.50);
+        Items chips = new Items("Chips      ", 3.50);
 
-            //try and catch for out of bounds exception
+        //adding name
+        store.add(beans);
+        store.add(pineapple);
+        store.add(water);
+        store.add(apple_watch);
+        store.add(toothpaste);
+        store.add(chips);
+
+
+        //command line input
+        //loops for every argument
+        for (int i = 0; i < args.length; i++) {
+            //try and catch in case argument number is out of bounds
             try {
-                item = scnr.nextInt() - 1;
-                System.out.println(store_item.get(item));
-            } catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println("Exception thrown: " + e);
+                //converting integer from string from command line
+                int n = Integer.parseInt(args[i]) - 1;
+                //getting item to print on receipt
+                System.out.print(store.get(n).getItemName());
+                //getting price and formatting to print on receipt
+                System.out.printf("%12s", "$");
+                System.out.printf("%6.2f\n", store.get(n).getItemPrice());
+                //calculating subtotal w/in for loop to continually update for each argument
+                subtotal = subtotal + store.get(n).getItemPrice();
+                //exception handling for out of bounds exception
+            } catch (IndexOutOfBoundsException e) {
+                System.out.println("This item is out of stock. Select another item and try again.");
+                System.exit(1);
+            } catch (NumberFormatException e) {
+                System.out.println("We do not sell this item. Select another item and try again.");
                 System.exit(1);
             }
-            subtotal = subtotal + store_price.get(item);
-            sales_tax = subtotal*0.05;
-            total = subtotal + sales_tax;
-            System.out.println("Subtotal: $" + subtotal);
-            System.out.println("Sales tax: $" + sales_tax);
-            System.out.println("Total: $" + total);
-            //System.out.println("Do you want to continue shopping? Enter yes or no.");
-            //yes = scnr.nextLine();
-            //if (scnr.nextLine() == "yes") {
-               // exit = false;
-            //} else if (scnr.nextLine() == "no") {
-                //exit = true;
-            //}
-        //}
+
+        }
+        System.out.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+        //calculating sales tax and total
+        sales_tax = subtotal*0.05;
+        total = subtotal + sales_tax;
+
+        //printing and formatting bottom portion of receipt
+        System.out.println();
+        System.out.print("Subtotal:             $");
+        System.out.printf("%.2f\n", subtotal);
+        System.out.print("Sales tax (5%):       $ ");
+        System.out.printf("%.2f\n", sales_tax);
+        System.out.print("Total:                ");
+        System.out.printf("$%.2f\n", + total);
+        System.out.println();
+
+        System.out.println("Thanks for shopping at Daniel's Corner Store. Have a great day!");
     }
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit 11">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +52,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lab1_1">
+  <component name="RunManager" selected="Application.Lab1">
     <configuration name="Lab1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab1" />
       <module name="Lab1-1" />
+      <option name="PROGRAM_PARAMETERS" value="1 2 3 4 5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,8 +86,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lab1_1" />
         <item itemvalue="Application.Lab1" />
+        <item itemvalue="Application.Lab1_1" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +101,7 @@
       <updated>1612453397482</updated>
       <workItem from="1612453398833" duration="13029000" />
       <workItem from="1612819802472" duration="886000" />
-      <workItem from="1612890205396" duration="17064000" />
+      <workItem from="1612890205396" duration="17133000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1612459718682</created>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613008396815</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit 11">
+      <created>1613011245475</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613011245475</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

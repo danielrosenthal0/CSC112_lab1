@@ -52,10 +52,10 @@ public class Lab1 {
                 //exception handling for out of bounds exception
             } catch (IndexOutOfBoundsException e) {
                 System.out.println("This item is out of stock. Select another item and try again.");
-                System.exit(1);
+                //System.exit(1);
             } catch (NumberFormatException e) {
                 System.out.println("We do not sell this item. Select another item and try again.");
-                System.exit(1);
+                //System.exit(1);
             }
 
         }

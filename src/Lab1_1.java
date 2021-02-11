@@ -8,7 +8,7 @@ public class Lab1_1 {
         double total;
 
         //welcome note
-        System.out.println("Welcome to Daniel's Corner Store");
+        System.out.println("Welcome to Daniel's Corner Store.");
         System.out.println();
         System.out.println("           Receipt");
         String item_name = "Item";
@@ -16,7 +16,7 @@ public class Lab1_1 {
         System.out.printf( "%-15s %13s %n", item_name, item_prices);
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-//creating array list for names
+        //creating array list for names
         ArrayList<Items> store = new ArrayList<>();
 
         Items beans = new Items("Beans      ", 2.50);
@@ -51,10 +51,10 @@ public class Lab1_1 {
                 subtotal = subtotal + store.get(n).getItemPrice();
                 //exception handling for out of bounds exception
             } catch (IndexOutOfBoundsException e) {
-                    System.out.println("Item is out of stock. Try again.");
+                    System.out.println("This item is out of stock. Select another item and try again.");
                     System.exit(1);
             } catch (NumberFormatException e) {
-                System.out.println("We do not sell this item. Try again.");
+                System.out.println("We do not sell this item. Select another item and try again.");
                 System.exit(1);
             }
 

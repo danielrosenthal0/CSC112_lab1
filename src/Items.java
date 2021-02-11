@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+
 public class Items {
     //private
     private String itemName;
     private double itemPrice;
+
 
     //constructor
     public Items(String name, double price) {

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit 11" />
+    <list default="true" id="db1a46e1-d0dd-4525-863f-18ff39fb3122" name="Default Changelist" comment="commit 12">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -90,6 +93,7 @@
       <workItem from="1612819802472" duration="886000" />
       <workItem from="1612890205396" duration="17343000" />
       <workItem from="1613053438478" duration="1074000" />
+      <workItem from="1613056699979" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1612459718682</created>
@@ -189,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613011416198</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="commit 12">
+      <created>1613056754859</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1613056754859</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +230,7 @@
     <MESSAGE value="commit 9" />
     <MESSAGE value="commit 10" />
     <MESSAGE value="commit 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 11" />
+    <MESSAGE value="commit 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 12" />
   </component>
 </project>

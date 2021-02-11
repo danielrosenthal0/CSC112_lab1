@@ -19,12 +19,12 @@ public class Lab1_1 {
 //creating array list for names
         ArrayList<Items> store = new ArrayList<>();
 
-        Items beans = new Items("Beans", 2.50);
-        Items pineapple = new Items("Pineapple", 3.99);
-        Items water = new Items("Water", 1.99);
+        Items beans = new Items("Beans      ", 2.50);
+        Items pineapple = new Items("Pineapple  ", 3.99);
+        Items water = new Items("Water        ", 1.99);
         Items apple_watch = new Items("Apple Watch", 299.99);
-        Items toothpaste = new Items("Toothpaste", 0.50);
-        Items chips = new Items("Chips", 3.50);
+        Items toothpaste = new Items("Toothpaste ", 0.50);
+        Items chips = new Items("Chips      ", 3.50);
 
         //adding name
         store.add(beans);

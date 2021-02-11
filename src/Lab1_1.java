@@ -21,7 +21,7 @@ public class Lab1_1 {
 
         Items beans = new Items("Beans      ", 2.50);
         Items pineapple = new Items("Pineapple  ", 3.99);
-        Items water = new Items("Water        ", 1.99);
+        Items water = new Items("Water      ", 1.99);
         Items apple_watch = new Items("Apple Watch", 299.99);
         Items toothpaste = new Items("Toothpaste ", 0.50);
         Items chips = new Items("Chips      ", 3.50);
@@ -50,9 +50,12 @@ public class Lab1_1 {
                 //calculating subtotal w/in for loop to continually update for each argument
                 subtotal = subtotal + store.get(n).getItemPrice();
                 //exception handling for out of bounds exception
-            } catch (ArrayIndexOutOfBoundsException e) {
-                    System.out.println("Exception thrown: " + e);
+            } catch (IndexOutOfBoundsException e) {
+                    System.out.println("Item is out of stock. Try again.");
                     System.exit(1);
+            } catch (NumberFormatException e) {
+                System.out.println("We do not sell this item. Try again.");
+                System.exit(1);
             }
 
         }
@@ -64,7 +67,8 @@ public class Lab1_1 {
 
         //printing and formatting bottom portion of receipt
         System.out.println();
-        System.out.println("Subtotal:             $" + subtotal);
+        System.out.print("Subtotal:             $");
+        System.out.printf("%.2f\n", subtotal);
         System.out.print("Sales tax (5%):       $ ");
         System.out.printf("%.2f\n", sales_tax);
         System.out.print("Total:                ");
